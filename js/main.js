@@ -12,7 +12,7 @@ parseInt (fechaNacimiento);
 
 let edad = Año - fechaNacimiento;
 
-alert ("Hola "+ nombre + " " + apellido + "\nEdad: " + edad + "\nBienvenido al curos de JavaScript!" )
+document.write("<div class=box2 >" + "<h2>" + "Hola "+ nombre + " " + apellido + "\nBienvenido al curos de JavaScript!" + "</h2>" + "</div>");
 
 console.log(nombre);
 console.log(apellido);
