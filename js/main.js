@@ -7,7 +7,7 @@ let apellido = prompt("Ingrese su Apellido");
 
 if (nombre == "" || apellido == ""){
 
-    console.error( "Error! ingresar datos validos");
+    console.error( "Error! Datos no ingresados");
 
     alert("Ingresar Datos Validos");
 
