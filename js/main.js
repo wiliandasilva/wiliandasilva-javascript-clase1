@@ -1,19 +1,34 @@
-const Año = 2021;
+const Año = parseInt ("2021");
 
-let nombre = prompt("Ingrese su Nombre");
+let nombre = prompt ("Ingrese su Nombre");
  
 let apellido = prompt("Ingrese su Apellido");
 
-let fechaNacimiento = prompt("Ingrese su fecha de Nacimiento");
 
-parseInt (Año);
+if (nombre == "" || apellido == ""){
 
-parseInt (fechaNacimiento);
+    console.error( "Error! ingresar datos validos");
 
-let edad = Año - fechaNacimiento;
+    alert("Ingresar Datos Validos");
 
-document.write("<div class=box2 >" + "<h2>" + "Hola "+ nombre + " " + apellido + "\nBienvenido al curos de JavaScript!" + "</h2>" + "</div>");
+} else {
 
-console.log(nombre);
-console.log(apellido);
-console.log(edad + " Años");
+    let fechaNacimiento = parseInt( prompt("Ingrese su fecha de Nacimiento"));
+
+    let edad = parseInt( Año - fechaNacimiento );
+
+    if ( fechaNacimiento == "" || edad < 18 ){
+        
+        alert("No puede Ingresar!");
+
+    } else {
+
+     document.write("<div class=box2 >" + "<h2>" + "Hola "+ nombre + " " + apellido + "\nBienvenido al curos de JavaScript!" + "</h2>" + "</div>");
+
+     console.log(nombre);
+     console.log(apellido);
+     console.log(edad);
+    }
+
+}
+
